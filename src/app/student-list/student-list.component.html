@@ -1,6 +1,7 @@
-<!-- <div>selected: {{selected}}</div> -->
+<div>selected: {{selected}}</div>
 
 <app-student
   [id]="student.id"
+  (selected)="selected = $event"
   *ngFor="let student of students"
 ></app-student>

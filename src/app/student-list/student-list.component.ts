@@ -7,7 +7,7 @@ import { StudentService } from '../student/student.service';
 })
 export class StudentListComponent {
   students: Student[];
-  // selected: string;
+  selected: string;
 
   constructor(studentService: StudentService) {
     this.students = studentService.getStudents();
